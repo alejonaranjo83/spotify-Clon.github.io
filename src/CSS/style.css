@@ -1,0 +1,597 @@
+/* Estilos para smartphone */
+
+:root {
+    --brand-color: #34d760;
+    --white: #ffffff;
+    --black1: black;
+    --black2: #121212;
+    --black3: #171717;
+    --gray: #535353;
+    --gray2: #a7a7a7;
+    --dark-green: #284B44;
+    --gradient-green: #527D70;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--white);
+    background-color: var(--black1);
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 16px 20px 16px;   
+}
+
+.header-desktop__container {
+    display: none;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+.header--buttons__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+.header--button {
+    color: var(--white);
+    font-size: 2.3rem;
+    padding: 0 0 0 25px;
+}
+
+
+
+main {
+    margin: 0 16px;
+}
+
+.main-title-desktop {
+    display: none;
+}
+
+.recently-short {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 177.5px);
+    column-gap: 6px;
+    row-gap: 6px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.recently-short-desktop{
+    display: none;
+}
+
+.recently-short--card {
+    display: grid;
+    grid-template-columns: 55px 122.5px;
+    align-items: center;
+    width: 177.5px;
+    height: 60px;
+    background: var(--gray);
+    border-radius: 4px;
+}
+
+.recently-short--card:hover {
+    cursor: pointer;
+}
+
+.recently-short--card__img1,
+.recently-short--card__img2,
+.recently-short--card__img3,
+.recently-short--card__img4,
+.recently-short--card__img5,
+.recently-short--card__img6 {
+    display: inline-block;
+    width: 55px;
+    height: 60px;
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px 0 0 4px;
+}
+
+.recently-short--card__img1 {
+    background-image: url("https://picsum.photos/200");
+}
+
+.recently-short--card__img2 {
+    background-image: url("https://picsum.photos/20");
+}
+
+.recently-short--card__img3 {
+    background-image: url("https://picsum.photos/240");
+}
+
+.recently-short--card__img4 {
+    background-image: url("https://picsum.photos/100");
+}
+
+.recently-short--card__img5 {
+    background-image: url("https://picsum.photos/56");
+}
+
+.recently-short--card__img6 {
+    background-image: url("https://picsum.photos/13");
+}
+
+.recently-short--card p {
+    display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 8px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+
+
+.shows {
+    margin-bottom: 50px;
+}
+
+.section-titles {
+    font-size: 2.1rem;
+    margin-bottom: 22px;
+}
+
+.shows--container {
+    display: grid;
+    grid-template-columns: repeat(6, 160px);
+    column-gap: 16px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.shows--card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.shows--card__img1,
+.shows--card__img2,
+.shows--card__img3,
+.shows--card__img4,
+.shows--card__img5,
+.shows--card__img6 {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shows--card__img1 {
+    background-image: url("https://picsum.photos/65");
+}    
+
+.shows--card__img2 {
+    background-image: url("https://picsum.photos/68");
+}
+
+.shows--card__img3 {
+    background-image: url("https://picsum.photos/312");
+}
+
+.shows--card__img4 {
+    background-image: url("https://picsum.photos/163");
+}
+
+.shows--card__img5 {
+    background-image: url("https://picsum.photos/137");
+}
+
+.shows--card__img6 {
+    background-image: url("https://picsum.photos/72");
+    
+}
+
+.shows--card h3 {
+    font-size: 1.4rem;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.shows--card p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: var(--gray2);
+}
+
+
+
+.mixes {
+    margin-bottom: 50px;
+}
+
+.mixes--container {
+    display: grid;
+    grid-template-columns: repeat(6,160px);
+    column-gap: 16px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.mixes--card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.mixes--card__img1,
+.mixes--card__img2,
+.mixes--card__img3,
+.mixes--card__img4,
+.mixes--card__img5,
+.mixes--card__img6 {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mixes--card__img1 {
+    background-image: url("https://picsum.photos/95");
+}
+
+.mixes--card__img2 {
+    background-image: url("https://picsum.photos/63");
+}
+
+.mixes--card__img3 {
+    background-image: url("https://picsum.photos/363");
+}
+
+.mixes--card__img4 {
+    background-image: url("https://picsum.photos/291");
+}
+
+.mixes--card__img5 {
+    background-image: url("https://picsum.photos/542");
+}
+
+.mixes--card__img6 {
+    background-image: url("https://picsum.photos/424");
+}
+
+.mixes--card__logo {
+    position: absolute;
+    font-size: 14px;
+    margin: 4px;
+}
+
+.mixes--vert-line1,
+.mixes--vert-line2,
+.mixes--vert-line3,
+.mixes--vert-line4,
+.mixes--vert-line5,
+.mixes--vert-line6 {
+    width: 6px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+}
+
+.mixes--vert-line1 {
+    background-color: yellow;
+}
+
+.mixes--vert-line2 {
+    background-color: rgb(255, 0, 153);
+}
+
+.mixes--vert-line3 {
+    background-color: rgb(0, 229, 255);
+}
+
+.mixes--vert-line4 {
+    background-color: rgb(0, 255, 166);
+}
+
+.mixes--vert-line5 {
+    background-color: rgb(255, 0, 38);
+}
+
+.mixes--vert-line6 {
+    background-color: rgb(247, 212, 75);
+}
+
+.mixes--horiz-line1,
+.mixes--horiz-line2,
+.mixes--horiz-line3,
+.mixes--horiz-line4,
+.mixes--horiz-line5,
+.mixes--horiz-line6 {
+    width: 160px;
+    height: 6px;
+    position: absolute;
+    top: 154px;
+}
+
+.mixes--horiz-line1 {
+    background-color: yellow;
+}
+
+.mixes--horiz-line2 {
+    background-color: rgb(255, 0, 153);
+}
+
+.mixes--horiz-line3 {
+    background-color: rgb(0, 229, 255);
+}
+
+.mixes--horiz-line4 {
+    background-color: rgb(0, 255, 166);
+}
+
+.mixes--horiz-line5 {
+    background-color: rgb(255, 0, 38);
+}
+
+.mixes--horiz-line6 {
+    background-color: rgb(247, 212, 75);
+}
+
+.mixes--container h3 {
+    font-size: 1.4rem;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    top: 127px;
+    left: 16px;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+.recently-long {
+    margin-bottom: 50px;
+}
+
+.recently-long--container {
+    display: grid;
+    grid-template-columns: repeat(12,120px);
+    column-gap: 16px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.recently-long--card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.recently-long--card__img1,
+.recently-long--card__img2,
+.recently-long--card__img3,
+.recently-long--card__img4,
+.recently-long--card__img5,
+.recently-long--card__img6,
+.recently-long--card__img7,
+.recently-long--card__img8,
+.recently-long--card__img9,
+.recently-long--card__img10,
+.recently-long--card__img11,
+.recently-long--card__img12 {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.recently-long--card__img1 {
+    background-image: url("https://picsum.photos/35");
+}
+
+.recently-long--card__img2 {
+    background-image: url("https://picsum.photos/34");
+}
+
+.recently-long--card__img3 {
+    background-image: url("https://picsum.photos/57");
+}
+
+.recently-long--card__img4 {
+    background-image: url("https://picsum.photos/38");
+}
+
+.recently-long--card__img5 {
+    background-image: url("https://picsum.photos/13");
+}
+
+.recently-long--card__img6 {
+    background-image: url("https://picsum.photos/74");
+}
+
+.recently-long--card__img7 {
+    background-image: url("https://picsum.photos/47");
+}
+
+.recently-long--card__img8 {
+    background-image: url("https://picsum.photos/3");
+}
+
+.recently-long--card__img9 {
+    background-image: url("https://picsum.photos/1");
+}
+
+.recently-long--card__img10 {
+    background-image: url("https://picsum.photos/100");
+}
+
+.recently-long--card__img11 {
+    background-image: url("https://picsum.photos/135");
+}
+
+.recently-long--card__img12 {
+    background-image: url("https://picsum.photos/200");
+}
+
+
+.jump-back p {
+    color: var(--gray2);
+}
+
+
+
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 110px;
+    width: 100vw;
+}
+
+footer .playing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px;
+    padding: 0px 20px 0px 8px;
+    background: var(--gray);
+    height: 55px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+footer .playing-container--left {
+    display: flex;
+    align-items: center;
+}
+
+footer .playing--img {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background-image: url("https://picsum.photos/22");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+
+footer .playing-container--right {
+    display: flex;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+footer .playing-container--center {
+    display: none;
+}
+
+footer .playing-container--right-desktop {
+    display: none;
+}
+
+footer .playing--info {
+    margin-left: 12px;
+}
+
+footer .footer--button {
+    color: var(--white);
+    font-size: 2.3rem;
+    padding: 0 0 0 15px;
+}
+
+.footer--button-desktop {
+    display: none;
+}
+
+
+
+
+.nav-buttons-container {
+    position: fixed;
+    bottom: 15px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 30px;
+    width: 100%;
+    height: 110px;
+    z-index: 2;
+}
+
+.nav-container img {
+    display: none;
+}
+
+.nav-buttons-table {
+    display: none;
+}
+
+.main--button {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.main--button__text {
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.nav-buttons2-container {
+    display: none;
+}
+
+.nav-playlist {
+    display:
+     none;
+}
+
+
+
+.shadow-rectang {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 37%, rgba(255,255,255,0) 100%);
+    /* fue útil usar este sitio para definir el gradient: https://cssgradient.io/ */
+    z-index: 1;
+}

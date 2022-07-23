@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyClone</title>
+    <script src="https://kit.fontawesome.com/af0bf7190a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <link rel="stylesheet" href="./src/CSS/desktop.css" media="(min-width: 930px)">
+</head>
+<body>
+    <div class="layout">
+        <!-- todo está contenido dentro de un layout, para que en la versión "desktop" se reubiquen diferentes secciones -->
+        <nav>
+            <!-- en versión "mobile" esta parte va abajo -->
+            <section class="nav-container">
+                <img src="./src/icons/Spotify_Logo_RGB_White.png" alt="logo Spotify">
+                <article class="nav-buttons-container">
+                    <div class="nav-buttons-table">
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-house"></i>
+                        </button>
+                        <p   class="main--button__text">Home</p>
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <p class="main--button__text">Search</p>
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-book-open"></i>
+                        </button>
+                        <p class="main--button__text">Your Library</p>
+                    </div>
+                </article>
+                <article class="nav-buttons2-container">
+                    <div class="nav-buttons-table">
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-square-plus"></i>
+                        </button>
+                        <p   class="main--button__text">Create playlist</p>
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <p class="main--button__text">Liked Songs</p>
+                        <button class="main--button" type="button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </button>
+                        <p class="main--button__text">Your Episodes</p>
+                    </div>
+                </article>
+                <article class="nav-playlist">
+                    <ul>
+                        <li>Música Papás</li>
+                        <li>NY-Playlist</li>
+                        <li>Miércoles de plenarios Salón Málaga</li>
+                        <li>Old songs López Jones</li>
+                        <li>Bienvenida FAI</li>
+                        <li>Música de los podcast Diana Uribe</li>
+                        <li>Electrónica 90</li>
+                        <li>Trotamundos</li>
+                        <li>Español viejas</li>
+                        <li>Mindfulness | Calm, light, relaxation</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>The Big Band - Latin Jazz</li>
+                        <li>Radio Rock</li>
+                        <li>canciones felices</li>
+                        <li>Salsangroove</li>
+                        <li>Piano - elew</li>
+                        <li>English training</li>
+                        <li>Elida Almeida - Kebrada</li>
+                        <li>Canto gregoriano</li>
+                        <li>Workday Lounge</li>
+                        <li>Clásicos del Vallenato</li>
+                        <li>Cena con Amigos</li>
+                        <li>Instrumental</li>
+                        <li>Popular/Filarmónica</li>
+                        <li>Español 80-90</li>
+                        <li>Tropical Navidad</li>
+                        <li>Coral</li>
+                        <li>Favoritas de la radio</li>
+                        <li>BODYTECH Runners</li>
+                        <li>De camino al gym</li>
+                        <li>Discover Weekly</li>
+                        <li>Variado ingles</li>
+                        <li>Electrónica</li>
+                        <li>Variado español</li>
+                        <li>Vallenato</li>
+                        <li>Rumba Alejo</li>
+                        <li>Colombia sonidos diferentes</li>
+                        <li>Portugues</li>
+                        <li>Samba</li>
+                        <li>Mezcla</li>
+                        <li>Instrumental Study</li>
+                        <li>Cine</li>
+                        <li>clasica</li>
+                        <li>el conciertazo del año</li>
+                        <li>Salsa</li>
+                        <li>Cristiana</li>
+                        <li>ASasa</li>
+                        <li>Qweq</li>
+                        <li>Yuyuer</li>
+                    </ul>
+                </article>
+            </section>
+        </nav>
+        <header>
+            <h1>Good afternoon</h1>
+            <div class="header--buttons__container">
+                <button class="header--button" type="button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <button class="header--button" type="button">
+                    <i class="fa-regular fa-clock"></i></i>
+                </button>
+                <button class="header--button" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-desktop__container">
+                <!-- otra cosa q no sale en Mobile pero sí en Desktop -->
+                <div class="header-desktop__container-left">
+                    <button class="header--button-desktop" type="button">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </button>
+                    <button class="header--button-desktop" type="button">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
+                </div>
+                <div  class="header-desktop__container-right">
+                    <button class="header--button-desktop-color" type="button">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </button>
+                    <p>alejonaranjo83</p>
+                    <button class="header--button-desktop-color-right" type="button">
+                        <i class="fa-solid fa-sort-down"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2 class="main-title-desktop">Good afternoon</h2>
+            <section class="recently-short">
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img1">
+                    </span>
+                    <p>Entiende tu mente</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img2">
+                    </span>
+                    <p>40 años de la Guerra de las Malvinas Lorem ipsum dolor</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img3"></span>
+                    <p>Variado ingles</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img4"></span>
+                    <p>Coming to New York</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img5"></span>
+                    <p>Sonido Perdido: CAIAS DADADSASD</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+                <article class="recently-short--card">
+                    <span class="recently-short--card__img6"></span>
+                    <p>Classical Mix</p>
+                    <span class="recently-short--card__point"></span>
+                    <span class="recently-short--card__bar"></span>
+                </article>
+            </section>
+
+            <section class="shows">
+                <h2 class="section-titles">Your shows</h2>
+                <div class="shows--container">
+                    <article class="shows--card">
+                        <span class="shows--card__img1"></span>
+                        <h3>DianaUribe.fm</h3>
+                        <p>Show . Diana Uribe</p>
+                    </article>
+                    <article class="shows--card">
+                        <span class="shows--card__img2"></span>
+                        <h3>La Otra Historia (Prof. Jose Guillermo Angel</h3>
+                        <p>Show . Radio Bolivariana</p>
+                    </article>
+                    <article class="shows--card">
+                        <span class="shows--card__img3"></span>
+                        <h3>Coming to New York City</h3>
+                        <p>Show . Katie Smith</p>
+                    </article>
+                    <article class="shows--card">
+                        <span class="shows--card__img4"></span>
+                        <h3>Sonido Perdido: CAIFE</h3>
+                        <p>Show . Spotify Studios</p>
+                    </article>
+                    <article class="shows--card">
+                        <span class="shows--card__img5"></span>
+                        <h3>Pensar de Nuevo</h3>
+                        <p>Show . Spotify Studios</p>
+                    </article>
+                    <article class="shows--card">
+                        <span class="shows--card__img6"></span>
+                        <h3>Audiolibros en español</h3>
+                        <p>Show . Feer Navarro Bunge</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mixes">
+                <h2 class="section-titles">Your top mixes</h2>
+                <div class="mixes--container">
+                    <article class="mixes--card">
+                        <span class="mixes--card__img1"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line1"></span>
+                        <span class="mixes--horiz-line1"></span>
+                        <h3>Rock Mix</h3>
+                        <p>Bon Jovi, The Knack, The Rolling Stones and more</p>
+                    </article>
+                    <article class="mixes--card">
+                        <span class="mixes--card__img2"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line2"></span>
+                        <span class="mixes--horiz-line2"></span>
+                        <h3>Latin Mix</h3>
+                        <p>Jesse & Joy, Gepe, Lucas Arnau and more</p>
+                    </article>
+                    <article class="mixes--card">
+                        <span class="mixes--card__img3"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line3"></span>
+                        <span class="mixes--horiz-line3"></span>
+                        <h3>Classical Mix</h3>
+                        <p>Yo Yo-Ma, Berliner Philarmoniker and more</p>
+                    </article>
+                    <article class="mixes--card">
+                        <span class="mixes--card__img4"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line4"></span>
+                        <span class="mixes--horiz-line4"></span>
+                        <h3>Pop Mix</h3>
+                        <p>Bruno Mars, Taio Cruz, Adele and more</p>
+                    </article>
+                    <article class="mixes--card">
+                        <span class="mixes--card__img5"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line5"></span>
+                        <span class="mixes--horiz-line5"></span>
+                        <h3>Romantic Mix</h3>
+                        <p>Beethoven, Ana Belén and more</p>
+                    </article>
+                    <article class="mixes--card">
+                        <span class="mixes--card__img6"></span>
+                        <span class="mixes--card__logo">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                        <span class="mixes--vert-line6"></span>
+                        <span class="mixes--horiz-line6"></span>
+                        <h3>Chill Mix</h3>
+                        <p>Joshua Radin, Coldplay, Enigma and more</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="recently-long">
+                <h2 class="section-titles">Recently played</h2>
+                <div class="recently-long--container">
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img1"></span>
+                        <h3>Maestro Lucho</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img2"></span>
+                        <h3>Clásicos del vallenato</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img3"></span>
+                        <h3>Coming to New York City Podcast</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img4"></span>
+                        <h3>This is Coldplay</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img5"></span>
+                        <h3>Bizet Carmen</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img6"></span>
+                        <h3>ROCK 80 - 90 GOLD COMPILATION</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img7"></span>
+                        <h3>Entiende tu mente</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img8"></span>
+                        <h3>Classical Mix</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img9"></span>
+                        <h3>DianaUribe.fm</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img10"></span>
+                        <h3>La Otra Historia (Prof. Memo Ánjel)</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img11"></span>
+                        <h3>Sonido Perdido: CAIFE</h3>
+                    </article>
+                    <article class="recently-long--card">
+                        <span class="recently-long--card__img12"></span>
+                        <h3>This is Opera</h3>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="jump-back">
+                <h2 class="section-titles">Jump back in</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, delectus magnam accusamus quod rem possimus? Fugiat iure accusamus deserunt porro recusandae quis amet commodi nam quo? A sunt veniam magni.
+                Ipsa, soluta velit! Officia earum magni minima, dicta qui inventore omnis facere exercitationem voluptas in velit incidunt. Nobis dolores aliquid quas, distinctio ab vitae totam voluptate adipisci deleniti provident eligendi?
+                Quis nostrum eum expedita corrupti perferendis, repellat assumenda pariatur fugit tempora. Repellat laudantium illum error? Atque, nisi accusamus dolor autem odio impedit illum eligendi excepturi repudiandae? Quos praesentium placeat tenetur!
+                Distinctio quaerat temporibus error doloribus alias, reprehenderit eos sed. <br> <br> Perspiciatis velit sint labore quae? Illo sint iure natus corporis asperiores quaerat iste laboriosam enim modi dignissimos ratione ipsum, voluptatibus consequuntur!
+                Aspernatur, sunt rem dignissimos iusto excepturi doloremque tempore, consectetur quos facilis fugiat expedita recusandae nesciunt eos numquam voluptatum aliquid tempora quod veniam accusamus architecto error voluptatibus exercitationem harum esse. Accusamus.
+                Praesentium quasi nihil eligendi numquam impedit iusto, consequatur nisi repellendus corrupti enim dolore magnam, sed aliquam commodi ad quod tempora sapiente. Qui minus rem a ipsam assumenda ullam, unde delectus.</p>
+            </section>
+        </main>
+        <footer>
+            <div class="playing-container">
+                <div class="playing-container--left">
+                    <span class="playing--img"></span>
+                    <span class="playing--img-desktop"></span>
+                    <div class="playing--info">
+                        <h3>40 años de la Guerra de las Malvinas</h3>
+                        <p>Diana Uribe</p>
+                    </div>
+                    <button class="footer--button-desktop" type="button">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                    <button class="footer--button-desktop" type="button">
+                        <i class="fa-solid fa-dice-one"></i>
+                    </button>
+                </div>
+                <div class="playing-container--right">
+                    <!-- este sale solo en smartphone -->
+                    <button class="footer--button" type="button">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </button>
+                    <button class="footer--button" type="button">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+                <div class="playing-container--center">
+                    <!-- este solo se ve en Desktop -->
+                    <div class="playing-fila1">
+                        <div class="playing-table1">
+                            <button class="footer--button-center" type="button">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </button>
+                            <button class="footer--button-center" type="button">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="footer--button-center-big" type="button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button class="footer--button-center" type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <button class="footer--button-center" type="button">
+                                <i class="fa-solid fa-repeat"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="playing-fila2">
+                        <p>0:35</p>
+                        <span class="playing-fila2-lineaA"></span>
+                        <span class="playing-fila2-lineaB"></span>
+                        <p>4:13</p>
+                    </div>
+                </div>
+
+                <div class="playing-container--right-desktop">
+                    <!-- este solo se ve en Desktop -->
+                    <button class="footer--button-right" type="button">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                    <button class="footer--button-right" type="button">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </button>
+                    <button class="footer--button-right" type="button">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                    <span class="footer-right-line"></span>
+                    <button class="footer--button-right" type="button">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </button>
+                </div>
+            </div>
+            <span class="shadow-rectang"></span>
+        </footer>
+    </div>
+</body>
+</html>
